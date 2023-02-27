@@ -29,6 +29,18 @@ public class MainBoxing {
         j = val.intValue();
         System.out.println(j);
 
+        // 3. Check even or odd number with Autoboxing and Unboxing
+        Integer intNr1 = 7; // Autoboxing
+        System.out.println(intNr1 + " is " + checkNr(intNr1)); // Unboxing - Done by the compiler
+
+        Integer intNr2 = 10; // Autoboxing
+        System.out.println(intNr2 + " is " + checkNr(intNr2)); // Unboxing - Done by the compiler
     }
 
+    public static String checkNr(int input) {
+        if(input%2==0)
+            return "even";
+        else
+            return "odd";
+    }
 }
